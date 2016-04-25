@@ -1,0 +1,50 @@
+﻿@model RPSClientApp.Models.ChampionshipModel
+
+<div>
+    @using (Html.BeginForm("Execute", "Championship", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="RPSContentHolder">
+            <h3>Enter the information manually</h3>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@Html.DisplayNameFor(m => m.Input)</span>
+                <input id="@Html.IdFor(m => m.Input)" name="@Html.NameFor(m => m.Input)" type="text" class="form-control" placeholder="Championship" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="RPSButtonHolder">
+            <div class="btn-group" role="group" aria-label="...">
+                <input class="btn btn-default" id="ExeBtn" type="submit" value="Execute match" />
+                <input class="btn btn-danger" id="ResetBtn" type="button" value="Start Over" />
+            </div>
+
+        </div>
+    }
+
+    @using (Html.BeginForm("UploadFile", "Championship", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="RPSContentHolder">
+            <h3>Or upload the file</h3>
+            @Html.AntiForgeryToken()
+            <label for="file">Filename:</label>
+            <input type="file" name="file" id="file" />
+            <div class="RPSButtonHolder">
+                <input class="btn btn-default" type="submit" value="Upload file" />
+            </div>
+        </div>
+    }
+
+    @using (Html.BeginForm("Reset", "Championship", FormMethod.Post, new { id = "ResetForm" }))
+    {
+        @Html.AntiForgeryToken()
+    }
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#ResetBtn').click(function () {
+                $('#ResetForm').submit();
+            });
+        });
+    </script>
+}

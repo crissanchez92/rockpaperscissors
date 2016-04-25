@@ -1,0 +1,21 @@
+﻿@using RPSClientApp.Resources;
+<h3>POST api/championship/new</h3>
+
+<p>
+    Receives the championship data and computes it to identify the winner.
+    The first and second place are stored into a database with their respective scores.
+    Returns the winner of the championship.
+</p>
+
+<h4>@APIResource.ResourceInfo</h4>
+<label><span class="bold">@APIResource.ResourceURL</span>:&nbsp;<span class="unbold">/api/championship/new</span></label><br />
+<label><span class="bold">@APIResource.HttpMethod</span>:&nbsp;<span class="unbold">@APIResource.PostMethod</span></label><br />
+<label><span class="bold">@APIResource.ResponseFormat</span>:&nbsp;<span class="unbold">@APIResource.JsonFormat</span></label><br />
+<label><span class="bold">@APIResource.QueryParams</span>:&nbsp;<span class="unbold">@APIResource.None</span></label><br />
+<label><span class="bold">@APIResource.BodyParams</span>:&nbsp;</label>
+<ul class="list-group">
+    <li class="list-group-item"><span class="typeLbl">Array</span>&nbsp;data: championship information</li>
+</ul>
+<label><span class="bold">@APIResource.ExampleRequest</span>:</label>&nbsp;<span class="unbold">@APIResource.PostMethod http://rpsapi.azurewebsites.net/api/championship/new </span><br />
+<span class="unbold">@APIResource.PostData: { data : [ [ "John", "R" ] , [ "Mark", "S" ] ] }</span><br />
+<label><span class="bold">@APIResource.ExampleOutput</span>:</label>&nbsp;{ "winner" : [ "John", "R" ] }<br />

@@ -1,0 +1,11 @@
+﻿@model RPSClientApp.Models.TopModel
+
+<div class="RPSContentHolder"> 
+    <h3>@Html.DisplayNameFor(m => m.Players)</h3>    
+    <ul class="list-group">
+        @foreach (var player in Model.Players)
+        {
+            <li class="list-group-item">@player</li>
+        }
+    </ul>
+</div>

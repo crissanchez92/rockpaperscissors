@@ -1,0 +1,18 @@
+﻿@model RPSClientApp.Models.TopModel
+
+<div class="RPSContentHolder">
+    @using (Html.BeginForm("GetTop", "Top", FormMethod.Post))
+    {
+        <div>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@Html.DisplayNameFor(m => m.Count)</span>
+                <input id="@Html.IdFor(m => m.Count)" name="@Html.NameFor(m => m.Count)" type="text" class="form-control" placeholder="Top value" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="RPSButtonHolder">
+            <div class="btn-group">
+                <input class="btn btn-default" id="submitBtn" type="submit" value="Get Top" />
+            </div>
+        </div>
+    }
+</div>

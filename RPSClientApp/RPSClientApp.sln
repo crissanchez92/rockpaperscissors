@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSClientApp", "RPSClientApp\RPSClientApp.csproj", "{F21CE37C-BDA3-4922-868A-42305AB0C4BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{7B565FEC-3BE6-43A6-BF81-B22EB38DF889}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{3F10E591-55B6-4837-AD9E-D3C6789D7B33}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{5E901CF1-AFEE-43B9-B111-FF52490F343A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\RPSClientApp.json = PublishScripts\Templates\RPSClientApp.json
+		PublishScripts\Templates\RPSClientApp.param.dev.json = PublishScripts\Templates\RPSClientApp.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "WebApiClient\WebApiClient.csproj", "{4FB2415D-E05D-4F7A-8AA7-02F707F43470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSAlgorithm", "..\RPSAlgorithm\RPSAlgorithm\RPSAlgorithm.csproj", "{10C23835-4243-49AD-90FB-18EF96F7AC5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F21CE37C-BDA3-4922-868A-42305AB0C4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21CE37C-BDA3-4922-868A-42305AB0C4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21CE37C-BDA3-4922-868A-42305AB0C4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21CE37C-BDA3-4922-868A-42305AB0C4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB2415D-E05D-4F7A-8AA7-02F707F43470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB2415D-E05D-4F7A-8AA7-02F707F43470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB2415D-E05D-4F7A-8AA7-02F707F43470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB2415D-E05D-4F7A-8AA7-02F707F43470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C23835-4243-49AD-90FB-18EF96F7AC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C23835-4243-49AD-90FB-18EF96F7AC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C23835-4243-49AD-90FB-18EF96F7AC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C23835-4243-49AD-90FB-18EF96F7AC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F10E591-55B6-4837-AD9E-D3C6789D7B33} = {7B565FEC-3BE6-43A6-BF81-B22EB38DF889}
+		{5E901CF1-AFEE-43B9-B111-FF52490F343A} = {7B565FEC-3BE6-43A6-BF81-B22EB38DF889}
+	EndGlobalSection
+EndGlobal

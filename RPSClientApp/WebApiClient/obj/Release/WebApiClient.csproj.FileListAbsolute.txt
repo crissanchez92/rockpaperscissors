@@ -1,0 +1,7 @@
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSClientApp\WebApiClient\bin\Release\WebApiClient.exe.config
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSClientApp\WebApiClient\bin\Release\WebApiClient.exe
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSClientApp\WebApiClient\bin\Release\WebApiClient.pdb
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSClientApp\WebApiClient\bin\Release\Newtonsoft.Json.dll
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSClientApp\WebApiClient\bin\Release\Newtonsoft.Json.xml
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSClientApp\WebApiClient\obj\Release\WebApiClient.exe
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSClientApp\WebApiClient\obj\Release\WebApiClient.pdb

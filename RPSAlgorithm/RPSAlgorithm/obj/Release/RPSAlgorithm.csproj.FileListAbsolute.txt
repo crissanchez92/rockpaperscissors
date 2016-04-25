@@ -1,0 +1,5 @@
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSAlgorithm\RPSAlgorithm\bin\Release\RPSAlgorithm.exe.config
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSAlgorithm\RPSAlgorithm\bin\Release\RPSAlgorithm.exe
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSAlgorithm\RPSAlgorithm\bin\Release\RPSAlgorithm.pdb
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSAlgorithm\RPSAlgorithm\obj\Release\RPSAlgorithm.exe
+C:\Users\Cristian\Documents\Visual Studio 2015\Projects\RPSAlgorithm\RPSAlgorithm\obj\Release\RPSAlgorithm.pdb

@@ -1,0 +1,23 @@
+﻿@using RPSClientApp.Resources;
+<h3>POST api/championship/result</h3>
+
+<p>
+    Stores the first and second place of a tournament, each user is stored with their respective scores.
+    The user names will be unique, but the same user can win 1 or more championships.
+    Returns the operation status if successfully.
+</p>
+
+<h4>@APIResource.ResourceInfo</h4>
+<label><span class="bold">@APIResource.ResourceURL</span>:&nbsp;<span class="unbold">/api/championship/result?first={first}&second={second}</span></label><br />
+<label><span class="bold">@APIResource.HttpMethod</span>:&nbsp;<span class="unbold">@APIResource.PostMethod</span></label><br />
+<label><span class="bold">@APIResource.ResponseFormat</span>:&nbsp;<span class="unbold">@APIResource.JsonFormat</span></label><br />
+<label><span class="bold">@APIResource.QueryParams</span>:</label>
+<ul class="list-group">
+    <li class="list-group-item"><span class="typeLbl">string</span>&nbsp;first: winner of the championship</li>
+    <li class="list-group-item"><span class="typeLbl">string</span>&nbsp;second: second place of the championship</li>
+</ul>
+<label><span class="bold">@APIResource.BodyParams</span>:&nbsp;<span class="unbold">@APIResource.None</span></label><br />
+<label><span class="bold">@APIResource.ExampleRequest</span>:</label>&nbsp;<span class="unbold">@APIResource.PostMethod http://rpsapi.azurewebsites.net/api/championship/result?first=John&second=Peter </span><br />
+<label><span class="bold">@APIResource.ExampleOutput</span>:</label>&nbsp;<span class="unbold">{ "status" : "success" }</span><br />
+    
+

@@ -1,0 +1,16 @@
+﻿@model RPSClientApp.Models.ChampionshipModel
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <h3>Championship result <span class="label label-danger">Error found</span></h3>
+    <span>Details:&nbsp;@Model.ErrorMessage</span>
+
+}
+else
+{
+    <div>
+        <h3>Championship result <span class="label label-success">There is a winner</span></h3>
+        @Html.DisplayNameFor(m => m.Winner):<span class="label label-default">&nbsp;@Model.Winner</span><br/>
+        @Html.DisplayNameFor(m => m.Strategy):<span class="label label-default">&nbsp;@Model.Strategy</span>
+    </div>
+}

@@ -1,0 +1,19 @@
+﻿@using RPSClientApp.Resources;
+<h3>GET api/championship/top</h3>
+
+<p>
+    Retrieves the top players of all championships. Returns the list of player names based on the count provided.
+</p>
+
+<h4>@APIResource.ResourceInfo</h4>
+<label><span class="bold">@APIResource.ResourceURL</span>:&nbsp;<span class="unbold">/api/championship/top?count={count}</span></label><br />
+<label><span class="bold">@APIResource.HttpMethod</span>:&nbsp;<span class="unbold">@APIResource.PostMethod</span></label><br />
+<label><span class="bold">@APIResource.ResponseFormat</span>:&nbsp;<span class="unbold">@APIResource.JsonFormat</span></label><br />
+<label><span class="bold">@APIResource.QueryParams</span>:</label>
+<ul class="list-group">
+    <li class="list-group-item"><span class="typeLbl">int?</span>&nbsp;count: top number</li>
+</ul>
+<label><span class="bold">@APIResource.BodyParams</span>:&nbsp;<span class="unbold">@APIResource.None</span></label><br />
+<label><span class="bold">@APIResource.ExampleRequest</span>:</label>&nbsp;<span class="unbold">@APIResource.PostMethod http://rpsapi.azurewebsites.net/api/championship/top?count=3 </span><br />
+<label><span class="bold">@APIResource.ExampleOutput</span>:</label>&nbsp;<span class="unbold">{ "players" : [ "John", "Mark", "Peter" ] }</span><br />
+
